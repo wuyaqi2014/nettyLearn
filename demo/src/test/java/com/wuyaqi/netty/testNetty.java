@@ -18,7 +18,6 @@ public class testNetty {
     public void testServClientNetty() throws InterruptedException {
 
         //定义两个线程，同时执行，一个线程Server start，一个线程client start
-
         ListeningExecutorService threadPool = MoreExecutors.listeningDecorator(Executors.newFixedThreadPool(5));
 
         Callable<String> serverCallable = new Callable<String>() {
